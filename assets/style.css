@@ -5,6 +5,7 @@
   list-style: none;
   text-decoration: none;
   color: white;
+  font-weight: bold;
   font-family: 'Baloo Bhaijaan 2', cursive
 }
 
@@ -36,10 +37,10 @@ body {
 }
 
 .menu-list-link:hover,
-.button-contact:hover {
-  -webkit-box-shadow: 0px 0px 41px 7px rgba(133, 131, 131, 0.2);
-  -moz-box-shadow: 0px 0px 41px 7px rgba(133, 131, 131, 0.2);
-  box-shadow: 0px 0px 41px 7px rgba(133, 131, 131, 0.2);
+.button-contact:hover,
+.heading-button:hover {
+  color: cadetblue;
+  transition-delay: 0.09s;
 }
 
 .button-contact {
@@ -51,8 +52,7 @@ body {
 }
 
 .button-contact:hover {
-  background-color: #46333383;
-  transition-delay: 0.1s;
+  border: 2px solid cadetblue;
 }
 
 .background {
