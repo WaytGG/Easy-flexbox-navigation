@@ -12,13 +12,17 @@
 body {
   width: 100vw;
   height: 100vh;
+  background-image: url(../assets/img/background.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 10%;
+  height: 94px;
   padding: 0 50px;
   background-color: #262626;
 }
@@ -55,17 +59,13 @@ body {
   border: 2px solid cadetblue;
 }
 
-.background {
-  background-image: url(../assets/img/background.jpg);
-  width: 100vw;
-  height: 90vh;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
 
 @media (max-width: 568px) {
+  body {
+    background-size: cover;
+    background-position: top;
+  }
+
   .header {
     display: flex;
     flex-wrap: wrap;
@@ -88,15 +88,14 @@ body {
     width: 80vw;
     font-weight: bold;
   }
-
-
-  .background {
-    background-position: center bottom;
-    background-size: cover;
-  }
 }
 
 @media (max-width: 320px) {
+  body {
+    background-position: bottom;
+    background-size:250%;
+  }
+
   .header {
     display: flex;
     flex-wrap: wrap;
@@ -118,11 +117,6 @@ body {
     justify-content: space-between;
     width: 80vw;
     font-weight: bold;
-  }
-
-  .background {
-    height: 60vh;
-    background-size:250%;
-    background-position: bottom;
+    font-size: 20px;
   }
 }
