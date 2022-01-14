@@ -30,9 +30,9 @@ body {
 
 .menu-list {
   display: flex;
-  width: 350px;
+  width: 400px;
   justify-content: space-between;
-  font-size: 18px;
+  font-size: 26px;
   text-transform: uppercase;
 }
 
