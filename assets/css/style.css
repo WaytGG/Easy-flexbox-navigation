@@ -6,37 +6,51 @@
   text-decoration: none;
   color: white;
   font-weight: bold;
-  font-family: 'Baloo Bhaijaan 2', cursive
+  font-family: "Baloo Bhaijaan 2", cursive;
 }
 
 body {
   width: 100vw;
   height: 100vh;
-  background-image: url(../assets/img/background.jpg);
+  background-image: url(../img/background.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
+
 .header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  background-color: #262626;
+}
+
+.headet-conainer {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 94px;
-  padding: 0 50px;
-  background-color: #262626;
+  flex-wrap: wrap;
+  max-width: 1850px;
+  width: 100%;
+  padding: 30px 20px;
 }
 
 .heading-button {
   text-transform: capitalize;
-  font-family: 'Neucha', cursive;
+  font-family: "Neucha", cursive;
+}
+
+.menu {
+  width: 350px;
+  padding: 15px 0;
 }
 
 .menu-list {
   display: flex;
-  width: 400px;
   justify-content: space-between;
-  font-size: 26px;
+  font-size: 20px;
   text-transform: uppercase;
 }
 
@@ -50,73 +64,11 @@ body {
 .button-contact {
   border: 2px solid white;
   border-radius: 4px;
-  padding: 13px 25px;
+  padding: 10px 35px;
   text-transform: uppercase;
-  font-size: 14px;
+  font-size: 15px;
 }
 
 .button-contact:hover {
   border: 2px solid cadetblue;
-}
-
-
-@media (max-width: 568px) {
-  body {
-    background-size: cover;
-    background-position: top;
-  }
-
-  .header {
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-    height: 150px;
-    padding: 0px 0px 2px 60px;
-  }
-
-  .heading {
-    font-size: 24px;
-  }
-
-  .menu {
-    padding: 5px 0;
-  }
-
-  .menu-list {
-    display: flex;
-    justify-content: space-between;
-    width: 80vw;
-    font-weight: bold;
-  }
-}
-
-@media (max-width: 320px) {
-  body {
-    background-position: bottom;
-    background-size:250%;
-  }
-
-  .header {
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-    height: 240px;
-    padding: 25px 0 25px 30px;
-  }
-
-  .menu {
-    padding: 15px 0;
-  }
-
-  .heading {
-    font-size: 24px;
-  }
-
-  .menu-list {
-    display: flex;
-    justify-content: space-between;
-    width: 80vw;
-    font-weight: bold;
-    font-size: 20px;
-  }
 }
